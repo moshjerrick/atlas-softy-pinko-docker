@@ -1,0 +1,11 @@
+# Latest version of ubuntu
+FROM ubuntu:latest
+
+# update APT
+RUN apt-get update
+
+# upgrade current installed software through APT
+RUN  apt-get upgrade -y
+
+# When docker container is run, echo "Hello World"
+CMD echo "Hello, World!"
